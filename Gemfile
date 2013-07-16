@@ -11,6 +11,7 @@ gem 'simple_form'
 gem 'jquery-rails'
 gem 'rails_autolink'
 gem 'ey_config'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails'
@@ -21,7 +22,6 @@ end
 platform :ruby do
   gem 'pg'
   gem 'sqlite3'
-  gem 'mysql2'
   gem 'unicorn'
 end
 
