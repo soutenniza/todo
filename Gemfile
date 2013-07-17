@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'rails_autolink'
 gem 'ey_config'
 gem 'newrelic_rpm'
+gem 'resque'
 
 group :assets do
   gem 'sass-rails'
