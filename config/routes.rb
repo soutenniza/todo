@@ -1,8 +1,12 @@
-Listr::Application.routes.draw do
+require 'resque/server'
 
+Listr::Application.routes.draw do
+  match 'eat/:food' => 'eat#food'
   resources :lists, :only => [:create, :destroy] do
     resources :tasks, :except => [:new, :edit, :show]
   end
+
+  mount Resque::Server, :at => "/resque"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
