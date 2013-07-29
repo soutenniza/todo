@@ -13,6 +13,9 @@ gem 'rails_autolink'
 gem 'ey_config'
 gem 'newrelic_rpm'
 gem 'resque'
+gem 'redis'
+gem 'redis-namespace'
+gem "yajl-ruby", "~> 1.1.0"
 
 group :assets do
   gem 'sass-rails'

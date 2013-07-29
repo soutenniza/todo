@@ -133,6 +133,7 @@ GEM
       raindrops (~> 0.7)
     vegas (0.1.11)
       rack (>= 1.0.0)
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
@@ -152,6 +153,8 @@ DEPENDENCIES
   puma
   rails (~> 3.2.12)
   rails_autolink
+  redis
+  redis-namespace
   resque
   sass-rails
   simple_form
@@ -160,3 +163,4 @@ DEPENDENCIES
   trinidad
   uglifier
   unicorn
+  yajl-ruby (~> 1.1.0)
